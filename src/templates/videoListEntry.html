@@ -1,11 +1,10 @@
-<!-- <div ng-controller="VideoData"> -->
-	<li class="video-list-entry media" ng-repeat="video in videoData">
+
+	<li class="video-list-entry media" ng-repeat="video in videos">
 	  <div class="media-left">
 	    <img class="media-object" ng-src="{{video.snippet.thumbnails.default.url}}" />
 	  </div>
 	  <div class="media-body">
-	    <div class="video-list-entry-title">{{video.snippet.title}}</div>
+	    <div ng-click = "selectVideo(video)" class="video-list-entry-title">{{video.snippet.title}}</div>
 	    <div class="video-list-entry-detail">{{video.snippet.description}}</div>
 	  </div>
 	</li>
-<!-- </div> -->
